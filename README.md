@@ -1,0 +1,2 @@
+# allrounded.io
+static theme
