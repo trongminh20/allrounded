@@ -2,19 +2,24 @@
 
 body{
 	margin:auto;
-	padding:auto;
-	
+	padding:auto;	
 	max-width: 100%;
 }
+
 a{
 	color:#7c9c37;
 }
+
+.spliter{
+	width:50%;
+	border:0.5px solid #e8e8e8;
+}
+
 #header{
 	margin-top:10px;
 	padding-bottom: 5px;
 	font-size: 1.5rem;
 	text-align: center;
-
 }
 
 #search-box{
@@ -42,10 +47,27 @@ a{
 }
 
 #navbar > ul > li > a{
-	margin-right: 20px;
+	margin-right: 10px;
 	font-size: 1.5rem;
 	color:#ccc;
 
+}
+
+#navbar > ul > li.dropdown{
+	display:inline-block;
+}
+#navbar > ul > li{
+	
+	border-right: 1px solid #666;
+	height: 40px;
+	text-align: center;
+}
+
+#navbar > ul > li > a:hover,
+#navbar > ul > li> a:active{
+	background-color: #222222;
+	font-size: 1.5rem;
+	color:#7c9c37;
 }
 
 .dropbtn{
@@ -79,10 +101,6 @@ a{
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-#navbar > ul > li.dropdown{
-	display:inline-block;
 }
 
 .carousel-control {   
@@ -137,18 +155,6 @@ a{
 #mem_services{
 	margin:20px 20px 20px 20px;
 }
-#navbar > ul > li{
-	margin: 20px auto;
-	border-right: 1px solid #666;
-	height: 40px;
-	text-align: center;
-}
-
-#navbar > ul > li > a:hover{
-	background-color: #222222;
-	font-size: 1.5rem;
-	color:#7c9c37;
-}
 
 #pic-gallery > img{
 	width:225px;
@@ -183,6 +189,7 @@ a{
 	background-color: #222222;
 	padding-left: 20px;
 	padding-right: 20px;
+	border-bottom: 1px solid #000;
 }
 
 #img-footer{
@@ -220,12 +227,17 @@ a{
 	border-radius: 25px;
 	background-color: #ccc;
 }
+#name_author{
+	background-color: #222;
+	height: 10%;
+	border-top: 0.5px solid #3a3a3a;
+	color:#666;
+}
 #copyrights{
 	float:left;
-	clear:both;
-
 }
-#author{
+#author > p{
 	float:right;
-	clear:both;
 }
+
+
